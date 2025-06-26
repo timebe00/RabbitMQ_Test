@@ -4,10 +4,12 @@ RabbitMQ 학습하기
 # MQ 실행 방법
 docker-compose up -d
 
+http://localhost:15672
+
 # MQ 설정방법
 1.
 Exchanges > Add a new exchange
-Name : testMQ
+Name : E1
 type : direct
 Durabilty : Durable
 Auto delete : No
@@ -20,7 +22,7 @@ Add exchange 클릭
 Queues add Streams > Add a new queue
 Virtual host: /
 Type: Default for virtual host
-Name: testQ
+Name: Q1
 Durability: Durable
 Arguments: [빈칸] = [빈칸]
 
@@ -34,5 +36,8 @@ Arguments: [빈칸] = [빈칸]
 
 Bind 클릭
 
+# Script 설정 방법
+npm install amqplib
+node MQSet.js
 
 

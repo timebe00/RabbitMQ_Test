@@ -13,4 +13,4 @@ services:
       - "4369:4369"
     environment:
       RABBITMQ_DEFAULT_USER: admin
-      RABBITMQ_DEFAULT_PASS: mqtest00@#
+      RABBITMQ_DEFAULT_PASS: admin
