@@ -21,7 +21,7 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
-const WebSocket = require("../common/common.js");
+const WebSocket = require("../common/WebSocket.js");
 WebSocket(server);
 
 /**
